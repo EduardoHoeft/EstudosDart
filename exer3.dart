@@ -3,7 +3,6 @@
 import 'dart:io';
 
 void main() {
-
   print('Digite um texto:');
   String? texto = stdin.readLineSync();
 
