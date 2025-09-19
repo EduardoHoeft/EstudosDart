@@ -4,7 +4,8 @@ import 'dart:io';
 
 void funcSoma(double n1, double n2) {
   double soma = n1 + n2;
-  print("A soma é..: $soma");
+  String somaFormatada = soma.toStringAsFixed(2);
+  print("A soma é..: $somaFormatada");
 }
 
 void main() {
@@ -14,7 +15,10 @@ void main() {
   print("Digite o 2 numero:");
   String? input2 = stdin.readLineSync();
 
-  if (input1 != null && input1.isNotEmpty && input2 != null && input2.isNotEmpty) {
+  if (input1 != null &&
+      input1.isNotEmpty &&
+      input2 != null &&
+      input2.isNotEmpty) {
     double? num1 = double.tryParse(input1);
     double? num2 = double.tryParse(input2);
     funcSoma(num1!, num2!);
