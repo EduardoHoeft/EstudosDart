@@ -4,7 +4,7 @@
 
 //ERROR: um valor do tipo "string" não aceita dentro var do tipo INT.
 void main() {
-  int valor = 10;
+  //int valor = 10;
 
   //valor = 'String';
 }
